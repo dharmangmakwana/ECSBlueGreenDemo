@@ -21,4 +21,5 @@ phases:
       - cat imagedefination.json
   
 artifacts:
-  files: imagedefination.json
+  files:
+    - '**/*'
