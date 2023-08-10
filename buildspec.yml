@@ -19,5 +19,5 @@ phases:
       - docker push $REPOSITORY_URI:latest
       - printf '[{"name":"hello-world", "ImageUri":"%s"}]' $REPOSITORY_URI:latest > imagedefination.json
   
-  artifacts:
-    files: imagedefination.json
+artifacts:
+  files: imagedefination.json
