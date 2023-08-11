@@ -1,5 +1,5 @@
 # Use General node images as builder and install dependency
-FROM public.ecr.aws/v9k4k1l7/localdockerhub:node14 AS build-env
+FROM public.ecr.aws/v9k4k1l7/localdockerhub:node14.1 AS build-env
 WORKDIR /usr/src/app
 COPY package*.json app.js ./
 RUN npm install
