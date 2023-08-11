@@ -17,9 +17,9 @@ phases:
     commands:
       - echo pushing image to ECR
       - docker push $REPOSITORY_URI:latest
-      - printf '[{"name":"hello-world", "ImageUri":"%s"}]' $REPOSITORY_URI:latest > imagedefination.json
+      - printf '[{"name":"hello-world", "ImageUri":"%s"}]' $REPOSITORY_URI:latest > imagedefinitions.json
       - cat imagedefination.json
   
 artifacts:
   files:
-    - '**/*'
+    - imagedefinitions.json
