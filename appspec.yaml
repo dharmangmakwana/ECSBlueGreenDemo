@@ -1,0 +1,9 @@
+version: 0.0
+Resources:
+    - TargetService:
+        Type: AWS::ECS::Service
+        Properties:
+            TaskDefinition: "arn:aws:ecs:us-east-1:489148222993:task-definition/DMBlueGreenTaskDefination:1"
+            LoadBalancerInfo:
+                ContainerName: "hello-world"
+                ContainerPort: "3000"
