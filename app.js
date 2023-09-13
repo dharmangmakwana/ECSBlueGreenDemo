@@ -1,4 +1,4 @@
 const express = require('express')
 const app = express()
-app.get('/', (req, res) => res.send("Hello Adani..! : Version 1.0.6"))
+app.get('/', (req, res) => res.send("Hello Panamax Kubernetes Team..! : Version 1.0.7"))
 app.listen(3000, () => console.log('Server ready'))
